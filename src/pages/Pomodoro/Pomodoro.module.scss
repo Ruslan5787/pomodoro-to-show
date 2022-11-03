@@ -1,0 +1,46 @@
+.pomodoro {
+  margin-top: 100px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 170px 50px 0 0;
+
+  :not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+.decor {
+  &_wrapper {
+    width: 30%;
+  }
+
+  &_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.timer {
+  &_wrapper {
+    margin-top: 100px;
+    margin-right: 90px;
+  }
+}
+
+.pictures_pinned_to_bottom_to_screen {
+  width: 500px !important;
+  height: 430px !important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

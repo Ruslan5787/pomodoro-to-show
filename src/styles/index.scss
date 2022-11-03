@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "./variables";
+
+body {
+  font-family: "Arimo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $secondary;
+  background-color: $primary;
+}
+
+input {
+  font-family: "Arino", sans-serif;
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+}

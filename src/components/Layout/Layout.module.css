@@ -1,0 +1,69 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sound_notification {
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sound_notification_icon {
+    margin-right: 10px;
+}
+
+.sound_notification:hover .switch {
+    border-bottom: 2px solid #ccc;
+}
+
+.switch {
+    font-size: 20px;
+    color: #caceac;
+    display: block;
+    border-bottom: 2px solid transparent;
+    padding-top: 8px;
+    transition: all 0.3s;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.navigateBar {
+    display: flex;
+    margin-left: auto;
+}
+
+.navigateBar_icon {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    transition: all 0.3s;
+}
+
+.navigateBar_icon svg {
+    width: 60%;
+}
+
+.navigateBar_icon:hover {
+    background-color: #061f17;
+}
+
+.navigateBar :not(:last-child) {
+    margin-right: 15px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.active {
+    background-color: #061f17;
+}
+
+/*# sourceMappingURL=Layout.module.css.map */

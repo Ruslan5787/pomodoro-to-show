@@ -1,0 +1,24 @@
+.body {
+    display: inline-block;
+    width: 85%;
+}
+
+.tabs_container {
+    max-width: 270px;
+}
+
+.content_wrapper {
+    display: none;
+}
+
+.content_wrapper_active {
+    display: block;
+}
+
+.content_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*# sourceMappingURL=BigTabs.module.css.map */

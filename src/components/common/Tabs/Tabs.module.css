@@ -1,0 +1,40 @@
+.tabs_header {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs_body {
+    display: flex;
+}
+
+.tabs_indicator {
+    height: 5px;
+    background-color: #caceac;
+    transition: all 0.3s;
+}
+
+.tab {
+    font-size: 20px;
+    color: #407061;
+    width: 100%;
+    padding-bottom: 11px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab:hover {
+    color: #caceac;
+    text-shadow: 0 0 1px #caceac, 0 0 1px #caceac;
+}
+
+.tab_active {
+    color: #caceac;
+    text-shadow: 0 0 1px #caceac, 0 0 1px #caceac;
+}
+
+/*# sourceMappingURL=Tabs.module.css.map */

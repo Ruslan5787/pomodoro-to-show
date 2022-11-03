@@ -1,0 +1,21 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown {
+  font-size: 140px;
+  font-weight: 700;
+  margin-bottom: 150px;
+}
+
+.buttons {
+  :not(:last-child) {
+    margin-right: 120px;
+  }
+
+  svg {
+    height: 55px;
+  }
+}

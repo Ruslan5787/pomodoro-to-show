@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sound_notification {
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &_icon {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    .switch {
+      border-bottom: 2px solid #ccc;
+    }
+  }
+}
+
+.switch {
+  font-size: 20px;
+  color: $secondary;
+  display: block;
+  border-bottom: 2px solid transparent;
+  padding-top: 8px;
+  transition: all 0.3s;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.navigateBar {
+  display: flex;
+  margin-left: auto;
+
+  &_icon {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    transition: all 0.3s;
+
+    svg {
+      width: 60%;
+    }
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+  }
+
+  :not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.active {
+  background-color: $primary-dark;
+}

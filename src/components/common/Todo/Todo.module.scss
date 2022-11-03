@@ -1,0 +1,71 @@
+@import "../../../styles/variables";
+
+.todo {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 11px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid $mute;
+
+  &_text {
+    line-height: 21px;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+
+  &_done {
+    composes: todo;
+
+    padding-left: 0;
+  }
+}
+
+.checkbox {
+  border: 1px solid #caceac;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  left: 0;
+  top: 3px;
+  margin: 0 15px 0 0;
+
+  &:hover {
+    background-color: $secondary;
+  }
+}
+
+.content_wrapper {
+  flex: 60%;
+}
+
+.text_wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.completed_badge {
+  font-size: 14px;
+  color: $mute;
+  border: 1px solid $mute !important;
+  padding: 4px 10px !important;
+  border-radius: 7px;
+  margin-left: 20px;
+}
+
+.circles {
+  display: flex;
+
+  :not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  background: $secondary-dark;
+}

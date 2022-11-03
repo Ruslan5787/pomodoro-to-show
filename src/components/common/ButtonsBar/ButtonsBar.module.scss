@@ -1,0 +1,23 @@
+.buttons_bar {
+  margin-left: 10px;
+
+  :not(:last-child) {
+    margin-right: 22px;
+  }
+}
+
+.task_control_button {
+  width: 16px;
+  height: 16px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.invisible {
+  composes: task_control_button;
+
+  visibility: hidden;
+}

@@ -1,0 +1,21 @@
+@import "../../../../styles/variables";
+
+.header {
+  display: inline-block;
+  min-width: 260px;
+  white-space: pre;
+}
+
+.tabs_container {
+  min-width: 290px;
+}
+
+.content {
+  &_wrapper {
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+}

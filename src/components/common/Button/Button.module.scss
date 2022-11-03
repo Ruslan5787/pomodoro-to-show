@@ -1,0 +1,38 @@
+@import "../../../styles/variables";
+
+.button {
+  font-size: 24px;
+  font-weight: 700;
+  color: $primary;
+  min-width: 364px;
+  display: block;
+  background-color: $secondary;
+  border-radius: 4px;
+  padding: 27px 20px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $secondary-dark;
+  }
+}
+
+.transparent {
+  composes: button;
+  color: $secondary;
+  background-color: transparent;
+  outline: 2px solid $secondary;
+
+  &:hover {
+    color: $primary;
+    background-color: $secondary;
+    border: none;
+  }
+}
+
+.small {
+  composes: button;
+  font-weight: 400;
+  min-width: 200px;
+  font-size: 20px;
+  padding: 10px 20px;
+}

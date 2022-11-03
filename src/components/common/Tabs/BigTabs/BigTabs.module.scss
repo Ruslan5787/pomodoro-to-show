@@ -1,0 +1,26 @@
+@import "../../../../styles/variables";
+
+.body {
+  display: inline-block;
+  width: 85%;
+}
+
+.tabs_container {
+  max-width: 270px;
+}
+
+.content {
+  &_wrapper {
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

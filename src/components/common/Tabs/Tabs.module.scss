@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+
+.tabs {
+  &_header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_body {
+    display: flex;
+  }
+
+  &_indicator {
+    height: 5px;
+    background-color: $secondary;
+    transition: all 0.3s;
+  }
+}
+
+.tab {
+  font-size: 20px;
+  color: $mute;
+  width: 100%;
+  padding-bottom: 11px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $secondary;
+    text-shadow: 0 0 1px $secondary, 0 0 1px $secondary;
+  }
+
+  &_active {
+    color: $secondary;
+    text-shadow: 0 0 1px $secondary, 0 0 1px $secondary;
+  }
+}

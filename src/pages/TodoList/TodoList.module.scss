@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  &_left {
+    flex: 50%;
+    margin-right: 100px;
+  }
+}
+
+.title_wrapper {
+  margin-bottom: 60px;
+}
+
+.tabs_wrapper {
+  text-align: right;
+}
+
+.todoList_wrapper {
+  margin-top: 45px;
+
+  :last-child {
+    border: none;
+  }
+}
+
+.image_wrapper {
+  margin-top: 85px;
+}
+
+.form_wrapper {
+  display: block;
+  flex: 35% 1;
+  margin-top: 85px;
+}

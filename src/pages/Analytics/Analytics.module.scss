@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.analytics {
+  &_list {
+    font-size: 20px;
+    flex: 0 1 55%;
+
+    :not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.title_wrapper {
+  margin-bottom: 60px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  &_left {
+    flex: 0 1 31%;
+    margin-right: 50px;
+  }
+}
+
+.sub_title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 4px solid $secondary;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
+
+.todoList_wrapper {
+  width: 58%;
+  margin-top: 62px;
+
+  :last-child {
+    border-bottom: none;
+  }
+}
+
+.task_completed_time {
+  margin-left: 20px;
+}

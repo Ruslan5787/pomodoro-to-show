@@ -1,0 +1,19 @@
+.header {
+    display: inline-block;
+    min-width: 260px;
+    white-space: pre;
+}
+
+.tabs_container {
+    min-width: 290px;
+}
+
+.content_wrapper {
+    display: none;
+}
+
+.content_wrapper_active {
+    display: block;
+}
+
+/*# sourceMappingURL=SmallTabs.module.css.map */
