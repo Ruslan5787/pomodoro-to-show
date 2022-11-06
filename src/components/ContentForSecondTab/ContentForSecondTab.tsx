@@ -15,7 +15,7 @@ export const ContentForSecondTab: FC = () => {
     <>
       <div className={styles.timer_wrapper}>
         <Timer
-          time={5 * 60}
+          time={5}
           volumeNotification={0.07}
           soundNotification={blackbird_singing}
         />
