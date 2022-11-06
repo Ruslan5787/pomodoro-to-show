@@ -45,7 +45,7 @@ export const TimerTab: FC<TimerTabProps> = memo((props) => {
     <>
       <div className={styles.timer_wrapper}>
         <Timer
-          time={10}
+          time={25 * 60}
           volumeNotification={0.15}
           changeState={changeState}
           soundNotification={rain_sounds}
