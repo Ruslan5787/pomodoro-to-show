@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 import {NavLink} from "react-router-dom";
 
 import styles from "../../pages/Pomodoro/Pomodoro.module.scss";
@@ -11,7 +11,7 @@ interface HomeScreenTabProps {
   handleClick: () => void;
 }
 
-export const HomeScreenTab: FC<HomeScreenTabProps> = (props) => {
+export const HomeScreenTab: FC<HomeScreenTabProps> = memo((props) => {
   const {isTimerTab, handleClick} = props;
 
   if (isTimerTab) {
@@ -32,4 +32,4 @@ export const HomeScreenTab: FC<HomeScreenTabProps> = (props) => {
       </div>
     </>
   );
-};
+});

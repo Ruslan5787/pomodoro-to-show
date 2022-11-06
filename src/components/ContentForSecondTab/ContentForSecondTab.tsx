@@ -13,7 +13,11 @@ export const ContentForSecondTab: FC = () => {
   return (
     <>
       <div className={styles.timer_wrapper}>
-        <Timer time={5} volumeNotification={0.07} soundNotification={blackbird_singing}/>
+        <Timer
+          time={5}
+          volumeNotification={0.07}
+          soundNotification={blackbird_singing}
+        />
       </div>
       <Decor
         textContent="Время для небольшого перерыва"

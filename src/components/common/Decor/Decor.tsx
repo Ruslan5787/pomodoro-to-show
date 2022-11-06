@@ -1,4 +1,4 @@
-import React, {FC, ReactNode} from "react";
+import React, {FC, memo, ReactNode} from "react";
 
 import styles from "./Decor.module.scss";
 
@@ -7,7 +7,7 @@ interface DecorProps {
   image: ReactNode;
 }
 
-export const Decor: FC<DecorProps> = (props) => {
+export const Decor: FC<DecorProps> = memo((props) => {
   const {textContent, image} = props;
 
   return (
@@ -17,4 +17,4 @@ export const Decor: FC<DecorProps> = (props) => {
       <div className={styles.image}>{image}</div>
     </div>
   );
-};
+});

@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from "react";
+import React, {FC, memo, useEffect, useState} from "react";
 
 import rain_sounds from "../../sounds/rain_sounds.mp3";
 
@@ -18,7 +18,7 @@ interface TimerTabProps {
   changeState: () => void;
 }
 
-export const TimerTab: FC<TimerTabProps> = (props) => {
+export const TimerTab: FC<TimerTabProps> = memo((props) => {
   const {isTimerTab, changeState} = props;
 
   const dispatch = useAppDispatch();
@@ -61,4 +61,4 @@ export const TimerTab: FC<TimerTabProps> = (props) => {
       />
     </>
   );
-};
+});

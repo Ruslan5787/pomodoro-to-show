@@ -1,4 +1,4 @@
-import React, {FC, ReactNode} from "react";
+import React, {FC, memo, ReactNode} from "react";
 
 import cn from "classnames";
 
@@ -10,7 +10,7 @@ interface ButtonBarProps {
   handleClick?: () => void;
 }
 
-export const ButtonBar: FC<ButtonBarProps> = (props) => {
+export const ButtonBar: FC<ButtonBarProps> = memo((props) => {
   const {image, hideButton, handleClick} = props;
 
   return (
@@ -23,4 +23,4 @@ export const ButtonBar: FC<ButtonBarProps> = (props) => {
       {image}
     </button>
   );
-};
+});

@@ -95,6 +95,7 @@ const todosListsSlice = createSlice({
 
         if (!isTaskAlreadyInAnalytics) {
           state.analyticsInfo.list.push(todo);
+          state.analyticsInfo.totalNumberTasks += 1;
         }
 
         state.analyticsInfo.totalNumberCompletedTasks += 1;

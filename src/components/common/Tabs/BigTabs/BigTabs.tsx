@@ -1,4 +1,4 @@
-import React, {FC, useState} from "react";
+import React, {FC, memo, useState} from "react";
 
 import cn from "classnames";
 
@@ -8,7 +8,7 @@ import {TabsProps} from "../../../../types/tabs";
 
 import {Tabs} from "../Tabs";
 
-export const BigTabs: FC<TabsProps> = (props) => {
+export const BigTabs: FC<TabsProps> = memo((props) => {
   const {tabsTitles, contentForFirstTab, contentForSecondTab} = props;
 
   const [activeTab, setActiveTab] = useState<number>(0);
@@ -45,4 +45,4 @@ export const BigTabs: FC<TabsProps> = (props) => {
       </div>
     </div>
   );
-};
+});

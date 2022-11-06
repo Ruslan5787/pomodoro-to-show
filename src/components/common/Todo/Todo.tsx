@@ -1,4 +1,4 @@
-import React, {FC, ReactNode} from "react";
+import React, {FC, memo, ReactNode} from "react";
 import {toggleCompleteTodo, updateAnalyticsData,} from "../../../store/reducers/TodosListsSlice";
 
 import styles from "./Todo.module.scss";
@@ -15,7 +15,7 @@ interface TaskProps {
   isNeedCompletedBadge?: boolean;
 }
 
-export const Todo: FC<TaskProps> = (props) => {
+export const Todo: FC<TaskProps> = memo((props) => {
   const {todoInfo, children, isNeedCheckbox, isNeedCompletedBadge} = props;
 
   const dispatch = useAppDispatch();
@@ -54,4 +54,4 @@ export const Todo: FC<TaskProps> = (props) => {
       {children}
     </div>
   );
-};
+});

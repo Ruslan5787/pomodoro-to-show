@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useRef, useState} from "react";
+import React, {FC, memo, useEffect, useRef, useState} from "react";
 
 import styles from "./Tabs.module.scss";
 
@@ -9,7 +9,7 @@ interface TabsWrapperProps {
   children: JSX.Element[];
 }
 
-export const TabsWrapper: FC<TabsWrapperProps> = (props) => {
+export const TabsWrapper: FC<TabsWrapperProps> = memo((props) => {
   const {selectedTab, children} = props;
 
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -28,4 +28,4 @@ export const TabsWrapper: FC<TabsWrapperProps> = (props) => {
       <TabsIndicator width={sliderWidth} index={selectedTab}/>
     </div>
   );
-};
+});

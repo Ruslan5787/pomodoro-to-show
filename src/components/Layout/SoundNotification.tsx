@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 
 import styles from "./Layout.module.scss";
 
@@ -11,7 +11,7 @@ import {toggleSoundNotificationState} from "../../store/reducers/SoundNotificati
 
 import {getSwitchState} from "../../helpers/getSwitchState";
 
-export const SoundNotification: FC = () => {
+export const SoundNotification: FC = memo(() => {
   const dispatch = useAppDispatch();
   const isSoundNotificationEnabled = useAppSelector(
     getSoundNotificationEnabled
@@ -33,4 +33,4 @@ export const SoundNotification: FC = () => {
       </button>
     </div>
   );
-};
+});

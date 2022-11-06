@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 
 import styles from "./Pomodoro.module.scss";
 
@@ -8,7 +8,7 @@ import {ContentForSecondTab} from "../../components/ContentForSecondTab/ContentF
 
 const tabsTitles = ["Таймер", "Перерыв"];
 
-export const Pomodoro: FC = () => {
+export const Pomodoro: FC = memo(() => {
   return (
     <div className={styles.pomodoro}>
       <div className={styles.content}>
@@ -20,4 +20,4 @@ export const Pomodoro: FC = () => {
       </div>
     </div>
   );
-};
+});

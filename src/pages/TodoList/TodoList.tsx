@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 import {useAppSelector} from "../../hooks/redux";
 
 import styles from "./TodoList.module.scss";
@@ -16,7 +16,7 @@ import {
 
 const tabsTitles = ["В процессе", "Выполненные"];
 
-export const TodoList: FC = () => {
+export const TodoList: FC = memo(() => {
   const {inProcess, completed} = useAppSelector((state) => state.todosLists);
 
   const inProcessLength = inProcess.length;
@@ -89,4 +89,4 @@ export const TodoList: FC = () => {
       </div>
     </div>
   );
-};
+});

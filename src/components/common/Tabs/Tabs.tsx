@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 
 import styles from "./Tabs.module.scss";
 
@@ -11,7 +11,7 @@ interface TabsProps {
   changeActiveTab: (value: number) => void;
 }
 
-export const Tabs: FC<TabsProps> = (props) => {
+export const Tabs: FC<TabsProps> = memo((props) => {
   const {selectedTab, tabsTitles, changeActiveTab} = props;
 
   return (
@@ -29,4 +29,4 @@ export const Tabs: FC<TabsProps> = (props) => {
       </TabsWrapper>
     </div>
   );
-};
+});

@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 import {NavLink} from "react-router-dom";
 
 import styles from "./ButtonsBar.module.scss";
@@ -20,7 +20,7 @@ interface ButtonsBarProps {
   todoText: string;
 }
 
-export const ButtonsBar: FC<ButtonsBarProps> = (props) => {
+export const ButtonsBar: FC<ButtonsBarProps> = memo((props) => {
   const {todoId, todoText, todoSerialNumber, numberTasksInList} = props;
   const dispatch = useAppDispatch();
 
@@ -55,4 +55,4 @@ export const ButtonsBar: FC<ButtonsBarProps> = (props) => {
       </NavLink>
     </div>
   );
-};
+});

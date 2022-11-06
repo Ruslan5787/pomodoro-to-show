@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {memo, useEffect, useState} from "react";
 
 import {useAppSelector} from "../../hooks/redux";
 import {getTodoId} from "../../store/selectors";
@@ -6,7 +6,7 @@ import {getTodoId} from "../../store/selectors";
 import {TimerTab} from "./TimerTab";
 import {HomeScreenTab} from "./HomeScreenTab";
 
-export const ContentForFirstTab = () => {
+export const ContentForFirstTab = memo(() => {
   const todoId = useAppSelector(getTodoId);
 
   const [isTimerTab, setTimerTab] = useState<boolean>(false);
@@ -27,4 +27,4 @@ export const ContentForFirstTab = () => {
       />
     </>
   );
-};
+});

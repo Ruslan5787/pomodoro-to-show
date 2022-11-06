@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 import {useAppSelector} from "../../hooks/redux";
 
 import styles from "./Analytics.module.scss";
@@ -10,7 +10,7 @@ import {
   InformationAboutLackContent
 } from "../../components/common/InformationAboutLackContent/InformationAboutLackContent";
 
-export const Analytics: FC = () => {
+export const Analytics: FC = memo(() => {
   const {
     list,
     totalNumberTimersSpentOnTasks,
@@ -64,4 +64,4 @@ export const Analytics: FC = () => {
       </div>
     </div>
   );
-};
+});

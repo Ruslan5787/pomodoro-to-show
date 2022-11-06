@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from "react";
+import React, {FC, memo, useEffect, useMemo, useState} from "react";
 
 import useSound from "use-sound";
 
@@ -20,8 +20,14 @@ interface TimerProps {
   setTimerFinished?: () => void;
 }
 
-export const Timer: FC<TimerProps> = (props) => {
-  const {time, volumeNotification, changeState, setTimerFinished, soundNotification} = props;
+export const Timer: FC<TimerProps> = memo((props) => {
+  const {
+    time,
+    volumeNotification,
+    changeState,
+    setTimerFinished,
+    soundNotification,
+  } = props;
 
   const isSoundNotificationEnabled = useAppSelector(
     getSoundNotificationEnabled
@@ -30,8 +36,14 @@ export const Timer: FC<TimerProps> = (props) => {
   const [timeLeft, setTimeLeft] = useState<number>(time);
   const [isTimerRunning, setTimerRunning] = useState<boolean>(false);
 
-  const minutes = getTimeWithExtraZero(Math.floor(timeLeft / 60));
-  const seconds = getTimeWithExtraZero(timeLeft - Number(minutes) * 60);
+  const minutes = useMemo(
+    () => getTimeWithExtraZero(Math.floor(timeLeft / 60)),
+    [timeLeft]
+  );
+  const seconds = useMemo(
+    () => getTimeWithExtraZero(timeLeft - Number(minutes) * 60),
+    [timeLeft]
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -53,7 +65,9 @@ export const Timer: FC<TimerProps> = (props) => {
     };
   }, [timeLeft, isTimerRunning]);
 
-  const [soundPlay] = useSound(soundNotification, {volume: volumeNotification});
+  const [soundPlay] = useSound(soundNotification, {
+    volume: volumeNotification,
+  });
 
   const handleStart = () => {
     if (timeLeft === 0) {
@@ -92,4 +106,4 @@ export const Timer: FC<TimerProps> = (props) => {
       </div>
     </div>
   );
-};
+});

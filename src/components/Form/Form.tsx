@@ -1,4 +1,4 @@
-import React, {ChangeEvent, FC, useState} from "react";
+import React, {ChangeEvent, FC, memo, useState} from "react";
 
 import styles from "./Form.module.scss";
 
@@ -7,7 +7,7 @@ import {addTodoInProcess} from "../../store/reducers/TodosListsSlice";
 
 import {Button} from "../common/Button/Button";
 
-export const Form: FC = () => {
+export const Form: FC = memo(() => {
   const dispatch = useAppDispatch();
 
   const [fieldValue, setFieldValue] = useState<string>("");
@@ -19,7 +19,7 @@ export const Form: FC = () => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
 
-    if (fieldValue) {
+    if (!!fieldValue.trim()) {
       dispatch(addTodoInProcess(fieldValue));
       setFieldValue("");
     }
@@ -37,11 +37,11 @@ export const Form: FC = () => {
 
       <div className={styles.button_wrapper}>
         <Button
-          textContent="Добавить задачу"
           isSmall={true}
+          textContent="Добавить задачу"
           handleClick={handleClick}
         />
       </div>
     </form>
   );
-};
+});

@@ -1,18 +1,18 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 
 import cn from "classnames";
 
 import styles from "./Button.module.scss";
 
 interface ButtonProps {
+  isSmall?: boolean;
   textContent: string;
   isTransparent?: boolean;
-  isSmall?: boolean;
   handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const Button: FC<ButtonProps> = (props) => {
-  const {textContent, isTransparent, isSmall, handleClick} = props;
+export const Button: FC<ButtonProps> = memo((props) => {
+  const {isSmall, textContent, isTransparent, handleClick} = props;
 
   return (
     <button
@@ -25,4 +25,4 @@ export const Button: FC<ButtonProps> = (props) => {
       {textContent}
     </button>
   );
-};
+});

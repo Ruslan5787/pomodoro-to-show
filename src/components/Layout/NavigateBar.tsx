@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 import {NavLink} from "react-router-dom";
 
 import {AnalyticsIcon, PomodoroIcon, TasksIcon} from "../../images/index";
@@ -8,7 +8,7 @@ import styles from "./Layout.module.scss";
 const setActive = ({isActive}: { isActive: boolean }) =>
   isActive ? styles.active : "";
 
-export const NavigateBar: FC = () => {
+export const NavigateBar: FC = memo(() => {
   return (
     <div className={styles.navigateBar}>
       <NavLink to="/" end className={setActive}>
@@ -30,4 +30,4 @@ export const NavigateBar: FC = () => {
       </NavLink>
     </div>
   );
-};
+});

@@ -18,7 +18,6 @@ import {ReactComponent as StopIcon} from "./timer/stop.svg";
 import {ReactComponent as RestartIcon} from "./timer/restart.svg";
 
 export {
-  AimIcon,
   ClickIcon,
   BalloonsIcon,
   MountainsIcon,
@@ -30,7 +29,8 @@ export {
   AnalyticsIcon,
   TasksIcon,
   PomodoroIcon,
-  StartIcon,
   StopIcon,
   RestartIcon,
+  AimIcon,
+  StartIcon,
 };

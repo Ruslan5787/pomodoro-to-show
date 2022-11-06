@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, memo} from "react";
 import {Outlet, useLocation} from "react-router-dom";
 
 import styles from "./Layout.module.scss";
@@ -6,7 +6,7 @@ import styles from "./Layout.module.scss";
 import {NavigateBar} from "./NavigateBar";
 import {SoundNotification} from "./SoundNotification";
 
-export const Layout: FC = () => {
+export const Layout: FC = memo(() => {
   const {pathname} = useLocation();
 
   const isHomePage = pathname === "/";
@@ -25,4 +25,4 @@ export const Layout: FC = () => {
       </main>
     </>
   );
-};
+});

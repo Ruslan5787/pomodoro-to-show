@@ -1,45 +1,45 @@
 .analytics_list {
-    font-size: 20px;
-    flex: 0 1 55%;
+  font-size: 20px;
+  flex: 0 1 55%;
 }
 
 .analytics_list :not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .title_wrapper {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content_left {
-    flex: 0 1 31%;
-    margin-right: 50px;
+  flex: 0 1 31%;
+  margin-right: 50px;
 }
 
 .sub_title {
-    font-size: 20px;
-    font-weight: bold;
-    border-bottom: 4px solid #caceac;
-    padding-bottom: 8px;
-    margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 4px solid #caceac;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
 }
 
 .todoList_wrapper {
-    width: 58%;
-    margin-top: 62px;
+  width: 58%;
+  margin-top: 62px;
 }
 
 .todoList_wrapper :last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .task_completed_time {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=Analytics.module.css.map */

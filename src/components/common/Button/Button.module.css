@@ -1,38 +1,38 @@
 .button {
-    font-size: 24px;
-    font-weight: 700;
-    color: #0a3125;
-    min-width: 364px;
-    display: block;
-    background-color: #caceac;
-    border-radius: 4px;
-    padding: 27px 20px;
-    transition: all 0.3s;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a3125;
+  min-width: 364px;
+  display: block;
+  background-color: #caceac;
+  border-radius: 4px;
+  padding: 27px 20px;
+  transition: all 0.3s;
 }
 
 .button:hover {
-    background-color: #81846e;
+  background-color: #81846e;
 }
 
 .transparent {
-    composes: button;
-    color: #caceac;
-    background-color: transparent;
-    outline: 2px solid #caceac;
+  composes: button;
+  color: #caceac;
+  background-color: transparent;
+  outline: 2px solid #caceac;
 }
 
 .transparent:hover {
-    color: #0a3125;
-    background-color: #caceac;
-    border: none;
+  color: #0a3125;
+  background-color: #caceac;
+  border: none;
 }
 
 .small {
-    composes: button;
-    font-weight: 400;
-    min-width: 200px;
-    font-size: 20px;
-    padding: 10px 20px;
+  composes: button;
+  font-weight: 400;
+  min-width: 200px;
+  font-size: 20px;
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=Button.module.css.map */
