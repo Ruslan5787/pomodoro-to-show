@@ -1,5 +1,5 @@
 .pomodoro {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 .content {
@@ -11,10 +11,10 @@
 .buttons_wrapper {
   display: flex;
   flex-direction: column;
-  margin: 170px 50px 0 0;
+  margin: 10.625rem 3.125rem 0 0;
 
   :not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 }
 

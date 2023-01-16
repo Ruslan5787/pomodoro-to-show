@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "./variables";
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Arimo", sans-serif;
   font-style: normal;

@@ -5,27 +5,24 @@
 }
 
 .sound_notification {
-  font-weight: 400;
-  font-size: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
 .sound_notification_icon {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
-
 .sound_notification:hover .switch {
-  border-bottom: 2px solid #ccc;
+  border-bottom: 0.1em solid #ccc;
 }
 
 .switch {
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 1.25rem;
   color: #caceac;
   display: block;
-  border-bottom: 2px solid transparent;
-  padding-top: 8px;
+  border-bottom: 0.1em solid transparent;
+  padding-top: 0.4em;
   transition: all 0.3s;
 }
 
@@ -38,24 +35,20 @@
   display: flex;
   margin-left: auto;
 }
-
 .navigateBar_icon {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 0.625rem;
   transition: all 0.3s;
 }
-
 .navigateBar_icon svg {
   width: 60%;
 }
-
 .navigateBar_icon:hover {
   background-color: #061f17;
 }
-
 .navigateBar :not(:last-child) {
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .wrapper {

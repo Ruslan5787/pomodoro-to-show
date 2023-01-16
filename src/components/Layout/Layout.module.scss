@@ -7,29 +7,28 @@
 }
 
 .sound_notification {
-  font-weight: 400;
-  font-size: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
 
   &_icon {
-    margin-right: 10px;
+    margin-right: 0.625rem;
   }
 
   &:hover {
     .switch {
-      border-bottom: 2px solid #ccc;
+      border-bottom: 0.1em solid #ccc;
     }
   }
 }
 
 .switch {
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 1.25rem;
   color: $secondary;
   display: block;
-  border-bottom: 2px solid transparent;
-  padding-top: 8px;
+  border-bottom: 0.1em solid transparent;
+  padding-top: 0.4em;
   transition: all 0.3s;
 }
 
@@ -45,7 +44,7 @@
   &_icon {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 0.625rem;
     transition: all 0.3s;
 
     svg {
@@ -58,7 +57,7 @@
   }
 
   :not(:last-child) {
-    margin-right: 15px;
+    margin-right: 0.9375rem;
   }
 }
 
