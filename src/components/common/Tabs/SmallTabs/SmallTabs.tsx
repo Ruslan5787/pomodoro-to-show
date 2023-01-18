@@ -18,7 +18,7 @@ export const SmallTabs: FC<TabsProps> = memo((props) => {
   };
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div className={styles.header}>
         <div className={styles.tabs_container}>
           <Tabs

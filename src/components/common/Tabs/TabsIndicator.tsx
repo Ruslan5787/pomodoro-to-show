@@ -14,8 +14,8 @@ export const TabsIndicator: FC<TabsIndicatorProps> = (props) => {
     <div
       className={styles.tabs_indicator}
       style={{
-        transform: `translateX(${width * index}px`,
-        width,
+        transform: `translateX(${(width * index) / 16}rem`,
+        width: `${width / 16}rem`,
       }}
     ></div>
   );

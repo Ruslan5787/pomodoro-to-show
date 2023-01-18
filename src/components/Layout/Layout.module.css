@@ -3,6 +3,11 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 550px) {
+  .header {
+    margin-bottom: 20px;
+  }
+}
 
 .sound_notification {
   display: flex;
@@ -11,14 +16,16 @@
 }
 .sound_notification_icon {
   margin-right: 0.625rem;
+  width: 1.75rem;
+  height: 2.062rem;
 }
 .sound_notification:hover .switch {
   border-bottom: 0.1em solid #ccc;
 }
 
 .switch {
-  font-weight: 400;
   font-size: 1.25rem;
+  font-weight: 400;
   color: #caceac;
   display: block;
   border-bottom: 0.1em solid transparent;
@@ -38,17 +45,37 @@
 .navigateBar_icon {
   display: flex;
   justify-content: center;
-  padding-top: 0.625rem;
+  padding: 1.312rem 1.062rem 0;
   transition: all 0.3s;
 }
+@media (max-width: 670px) {
+  .navigateBar_icon {
+    padding: 0.712rem 0.962rem 0;
+  }
+}
+@media (max-width: 550px) {
+  .navigateBar_icon {
+    padding: 0.212rem 0.862rem 0;
+  }
+}
 .navigateBar_icon svg {
-  width: 60%;
+  width: 3.312rem;
+  height: 5.625rem;
+}
+@media (max-width: 670px) {
+  .navigateBar_icon svg {
+    width: 3.012rem;
+    height: 5.925rem;
+  }
+}
+@media (max-width: 550px) {
+  .navigateBar_icon svg {
+    width: 2.412rem;
+    height: 4.825rem;
+  }
 }
 .navigateBar_icon:hover {
   background-color: #061f17;
-}
-.navigateBar :not(:last-child) {
-  margin-right: 0.9375rem;
 }
 
 .wrapper {

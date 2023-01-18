@@ -2,14 +2,25 @@
   display: flex;
   justify-content: space-between;
 }
-
+@media (max-width: 550px) {
+  .content {
+    flex-direction: column;
+  }
+}
 .content_left {
   flex: 50%;
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
-
-.title_wrapper {
-  margin-bottom: 60px;
+@media (max-width: 670px) {
+  .content_left {
+    margin-right: 4.05rem;
+  }
+}
+@media (max-width: 550px) {
+  .content_left {
+    margin-right: 0;
+    order: 1;
+  }
 }
 
 .tabs_wrapper {
@@ -17,21 +28,34 @@
 }
 
 .todoList_wrapper {
-  margin-top: 45px;
+  margin-top: 2.812rem;
 }
-
 .todoList_wrapper :last-child {
   border: none;
 }
 
 .image_wrapper {
-  margin-top: 85px;
+  margin-top: 5.312rem;
+}
+@media (max-width: 550px) {
+  .image_wrapper {
+    margin-top: 0;
+  }
 }
 
 .form_wrapper {
   display: block;
   flex: 35% 1;
-  margin-top: 85px;
+  margin-top: 5.312rem;
+}
+@media (max-width: 550px) {
+  .form_wrapper {
+    margin: 0 0 40px 0;
+  }
+}
+
+.information_about_lack_content_wrapper {
+  margin-top: 70px;
 }
 
 /*# sourceMappingURL=TodoList.module.css.map */

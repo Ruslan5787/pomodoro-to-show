@@ -25,7 +25,6 @@ export const SoundNotification: FC = memo(() => {
     <div className={styles.sound_notification}>
       <SoundNotificationIcon
         className={styles.sound_notification_icon}
-        width={28}
       />
 
       <button className={styles.switch} onClick={handleClick}>

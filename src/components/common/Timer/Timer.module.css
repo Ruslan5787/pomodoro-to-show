@@ -5,17 +5,29 @@
 }
 
 .countdown {
-  font-size: 140px;
+  font-size: 8.75rem;
   font-weight: 700;
-  margin-bottom: 150px;
+  margin-bottom: 1.071em;
+}
+@media (max-width: 670px) {
+  .countdown {
+    font-size: 8.15rem;
+    margin-bottom: 0.771em;
+  }
+}
+@media (max-width: 550px) {
+  .countdown {
+    margin-bottom: 0.6em;
+  }
 }
 
-.buttons :not(:last-child) {
-  margin-right: 120px;
+.buttons {
+  display: flex;
+  width: 230px;
+  justify-content: space-around;
 }
-
 .buttons svg {
-  height: 55px;
+  height: 3.4375rem;
 }
 
 /*# sourceMappingURL=Timer.module.css.map */

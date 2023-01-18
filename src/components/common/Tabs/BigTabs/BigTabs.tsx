@@ -1,15 +1,15 @@
-import React, {FC, memo, useState} from "react";
+import React, { FC, memo, useState } from "react";
 
 import cn from "classnames";
 
 import styles from "./BigTabs.module.scss";
 
-import {TabsProps} from "../../../../types/tabs";
+import { TabsProps } from "../../../../types/tabs";
 
-import {Tabs} from "../Tabs";
+import { Tabs } from "../Tabs";
 
 export const BigTabs: FC<TabsProps> = memo((props) => {
-  const {tabsTitles, contentForFirstTab, contentForSecondTab} = props;
+  const { tabsTitles, contentForFirstTab, contentForSecondTab } = props;
 
   const [activeTab, setActiveTab] = useState<number>(0);
 

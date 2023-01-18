@@ -1,18 +1,23 @@
 @import "../../../styles/variables";
 
 .button {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: $primary;
-  min-width: 364px;
+  min-width: 22.75rem;
   display: block;
   background-color: $secondary;
-  border-radius: 4px;
-  padding: 27px 20px;
+  border-radius: 0.166em;
+  padding: 1.125em 0.833em;
   transition: all 0.3s;
 
   &:hover {
     background-color: $secondary-dark;
+  }
+
+  @media(max-width: 670px) {
+    min-width: 19.65rem;
+    padding: 0.925em 0.233em;
   }
 }
 
@@ -20,7 +25,7 @@
   composes: button;
   color: $secondary;
   background-color: transparent;
-  outline: 2px solid $secondary;
+  outline: 0.125rem solid $secondary;
 
   &:hover {
     color: $primary;
@@ -31,8 +36,8 @@
 
 .small {
   composes: button;
+  font-size: 1.25rem;
   font-weight: 400;
-  min-width: 200px;
-  font-size: 20px;
-  padding: 10px 20px;
+  min-width: 12.5rem;
+  padding: 0.5em 1em;
 }

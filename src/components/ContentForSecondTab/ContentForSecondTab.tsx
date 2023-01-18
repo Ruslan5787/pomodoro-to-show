@@ -10,12 +10,11 @@ import {Timer} from "../common/Timer/Timer";
 import {Decor} from "../common/Decor/Decor";
 
 export const ContentForSecondTab: FC = () => {
-  console.log('e')
   return (
     <>
       <div className={styles.timer_wrapper}>
         <Timer
-          time={5}
+          time={500}
           volumeNotification={0.07}
           soundNotification={blackbird_singing}
         />

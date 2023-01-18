@@ -1,17 +1,29 @@
+@media (max-width: 550px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .header {
   display: inline-block;
-  min-width: 260px;
+  min-width: 16.25rem;
   white-space: pre;
 }
 
 .tabs_container {
-  min-width: 290px;
+  min-width: 18.125rem;
+}
+@media (max-width: 550px) {
+  .tabs_container {
+    max-width: 23.225rem;
+    margin: 0 auto;
+  }
 }
 
 .content_wrapper {
   display: none;
 }
-
 .content_wrapper_active {
   display: block;
 }

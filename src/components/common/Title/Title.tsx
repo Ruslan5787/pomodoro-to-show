@@ -1,6 +1,6 @@
 import React, {FC, memo} from "react";
 
-import styles from "./Titel.module.scss";
+import styles from "./Title.module.scss";
 
 interface TitleProps {
   textContent: string;

@@ -1,31 +1,30 @@
-import React, {FC, memo} from "react";
-import {useAppSelector} from "../../hooks/redux";
+import React, { FC, memo } from "react";
+import { useAppSelector } from "../../hooks/redux";
 
 import styles from "./TodoList.module.scss";
+import stylesTitle from "../../components/common/Title/Title.module.scss";
 
-import {Form} from "../../components/Form/Form";
-import {Title} from "../../components/common/Title/Title";
-import {Decor} from "../../components/common/Decor/Decor";
-import {SmallTabs} from "../../components/common/Tabs/SmallTabs/SmallTabs";
-import {ButtonsBar} from "../../components/common/ButtonsBar/ButtonsBar";
-import {Todo} from "../../components/common/Todo/Todo";
-import {BalloonsIcon} from "../../images";
-import {
-  InformationAboutLackContent
-} from "../../components/common/InformationAboutLackContent/InformationAboutLackContent";
+import { Form } from "../../components/Form/Form";
+import { Title } from "../../components/common/Title/Title";
+import { Decor } from "../../components/common/Decor/Decor";
+import { SmallTabs } from "../../components/common/Tabs/SmallTabs/SmallTabs";
+import { TodoButtonsBar } from "../../components/common/TodoButtonsBar/TodoButtonsBar";
+import { Todo } from "../../components/common/Todo/Todo";
+import { BalloonsIcon } from "../../images";
+import { InformationAboutLackContent } from "../../components/common/InformationAboutLackContent/InformationAboutLackContent";
 
 const tabsTitles = ["В процессе", "Выполненные"];
 
 export const TodoList: FC = memo(() => {
-  const {inProcess, completed} = useAppSelector((state) => state.todosLists);
+  const { inProcess, completed } = useAppSelector((state) => state.todosLists);
 
   const inProcessLength = inProcess.length;
   const completedLength = completed.length;
 
   return (
     <div>
-      <div className={styles.title_wrapper}>
-        <Title textContent={"Список задач"}/>
+      <div className={stylesTitle.title_wrapper}>
+        <Title textContent={"Список задач"} />
       </div>
 
       <div className={styles.content}>
@@ -43,7 +42,7 @@ export const TodoList: FC = memo(() => {
                           isNeedCheckbox={true}
                           todoInfo={todo}
                         >
-                          <ButtonsBar
+                          <TodoButtonsBar
                             todoId={todo.id}
                             todoSerialNumber={index}
                             numberTasksInList={inProcess.length - 1}
@@ -53,7 +52,11 @@ export const TodoList: FC = memo(() => {
                       ))}
                     </div>
                   ) : (
-                    <InformationAboutLackContent marginTop={100}/>
+                    <div
+                      className={styles.information_about_lack_content_wrapper}
+                    >
+                      <InformationAboutLackContent />
+                    </div>
                   )
                 }
                 contentForSecondTab={
@@ -68,14 +71,18 @@ export const TodoList: FC = memo(() => {
                       ))}
                     </div>
                   ) : (
-                    <InformationAboutLackContent marginTop={100}/>
+                    <div
+                      className={styles.information_about_lack_content_wrapper}
+                    >
+                      <InformationAboutLackContent />
+                    </div>
                   )
                 }
               />
             ) : (
               <div className={styles.image_wrapper}>
                 <Decor
-                  image={<BalloonsIcon/>}
+                  image={<BalloonsIcon />}
                   textContent="Давайте начнем что-нибудь веселое"
                 />
               </div>
@@ -84,7 +91,7 @@ export const TodoList: FC = memo(() => {
         </div>
 
         <div className={styles.form_wrapper}>
-          <Form/>
+          <Form />
         </div>
       </div>
     </div>

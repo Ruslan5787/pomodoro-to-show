@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 550px) {
+    margin-bottom: 20px;
+  }
 }
 
 .sound_notification {
@@ -13,6 +17,8 @@
 
   &_icon {
     margin-right: 0.625rem;
+    width: 1.75rem;
+    height: 2.062rem;
   }
 
   &:hover {
@@ -23,8 +29,8 @@
 }
 
 .switch {
-  font-weight: 400;
   font-size: 1.25rem;
+  font-weight: 400;
   color: $secondary;
   display: block;
   border-bottom: 0.1em solid transparent;
@@ -44,20 +50,35 @@
   &_icon {
     display: flex;
     justify-content: center;
-    padding-top: 0.625rem;
+    padding: 1.312rem 1.062rem 0;
     transition: all 0.3s;
 
+    @media(max-width: 670px) {
+      padding: 0.712rem 0.962rem 0;
+    }
+
+    @media(max-width: 550px) {
+      padding: 0.212rem 0.862rem 0
+    }
+
     svg {
-      width: 60%;
+      width: 3.312rem;
+      height: 5.625rem;
+
+      @media(max-width: 670px) {
+        width: 3.012rem;
+        height: 5.925rem;
+      }
+      
+      @media (max-width: 550px) {
+        width: 2.412rem;
+        height: 4.825rem;
+      }
     }
 
     &:hover {
       background-color: $primary-dark;
     }
-  }
-
-  :not(:last-child) {
-    margin-right: 0.9375rem;
   }
 }
 

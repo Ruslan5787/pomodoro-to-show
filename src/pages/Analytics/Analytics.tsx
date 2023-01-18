@@ -2,6 +2,8 @@ import React, {FC, memo} from "react";
 import {useAppSelector} from "../../hooks/redux";
 
 import styles from "./Analytics.module.scss";
+import stylesTitle from "../../components/common/Title/Title.module.scss";
+
 
 import {Title} from "../../components/common/Title/Title";
 import {Todo} from "../../components/common/Todo/Todo";
@@ -29,7 +31,7 @@ export const Analytics: FC = memo(() => {
 
   return (
     <div className={styles.analytics}>
-      <div className={styles.title_wrapper}>
+      <div className={stylesTitle.title_wrapper}>
         <Title textContent={"Статистика"}/>
       </div>
 
@@ -58,7 +60,7 @@ export const Analytics: FC = memo(() => {
           {list.length ? (
             analyticsList
           ) : (
-            <InformationAboutLackContent marginTop={50}/>
+            <InformationAboutLackContent />
           )}
         </div>
       </div>

@@ -2,6 +2,16 @@
 html {
   font-size: 16px;
 }
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
 
 body {
   font-family: "Arimo", sans-serif;
@@ -26,7 +36,7 @@ button {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 62.5rem;
   height: 100vh;
   position: relative;
   margin: 0 auto;

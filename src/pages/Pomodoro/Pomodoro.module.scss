@@ -1,5 +1,13 @@
 .pomodoro {
   margin-top: 6.25rem;
+
+  @media (max-width: 670px) {
+    margin-top: 5rem;
+  }
+
+  @media(max-width: 550px) {
+    margin-top: 3rem;
+  }
 }
 
 .content {
@@ -15,6 +23,15 @@
 
   :not(:last-child) {
     margin-bottom: 3.125rem;
+  }
+
+  @media(max-width: 670px) {
+    margin: 9.525rem 3rem 0 0;
+  }
+
+
+  @media(max-width: 550px) {
+    margin: 70px 0 50px 0;
   }
 }
 
@@ -32,15 +49,38 @@
 
 .timer {
   &_wrapper {
-    margin-top: 100px;
-    margin-right: 90px;
+    margin-top: 6.25rem;
+    margin-right: 5.625rem;
+
+    @media(max-width: 670px) {
+      margin-right: 4.625rem;
+    }
+    
+    @media (max-width: 550px) {
+      margin: 55px 0;
+    }
   }
 }
 
 .pictures_pinned_to_bottom_to_screen {
-  width: 500px !important;
-  height: 430px !important;
+  width: auto !important;
+  height: 40vh !important;
   position: absolute;
   bottom: 0;
   right: 0;
+
+  @media(max-width: 550px) {
+    height: 30vh !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media(max-height: 790px) {;
+    height: 20vh !important;
+
+  }
+
+  @media(max-height: 650px) {;
+    display: none;
+  }
 }

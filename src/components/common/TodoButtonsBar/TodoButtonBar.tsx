@@ -2,7 +2,7 @@ import React, {FC, memo, ReactNode} from "react";
 
 import cn from "classnames";
 
-import styles from "./ButtonsBar.module.scss";
+import styles from "./TodoButtonsBar.module.scss";
 
 interface ButtonBarProps {
   image: ReactNode;
@@ -10,7 +10,7 @@ interface ButtonBarProps {
   handleClick?: () => void;
 }
 
-export const ButtonBar: FC<ButtonBarProps> = memo((props) => {
+export const TodoButtonBar: FC<ButtonBarProps> = memo((props) => {
   const {image, hideButton, handleClick} = props;
 
   return (

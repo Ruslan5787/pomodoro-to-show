@@ -2,46 +2,61 @@
 
 .analytics {
   &_list {
-    font-size: 20px;
+    font-size: 1.25rem;
     flex: 0 1 55%;
 
+    li {
+      white-space: nowrap;
+    }
+
     :not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 1em;
     }
   }
-}
-
-.title_wrapper {
-  margin-bottom: 60px;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
 
   &_left {
     flex: 0 1 31%;
-    margin-right: 50px;
+    margin-right: 3.125rem;
+
+    @media (max-width: 550px) {
+      margin-right: 0;
+      width: 100%;
+    }
   }
 }
 
 .sub_title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  border-bottom: 4px solid $secondary;
-  padding-bottom: 8px;
-  margin-bottom: 30px;
+  border-bottom: 0.2em solid $secondary;
+  padding-bottom: 0.4em;
+  margin-bottom: 1.5em;
 }
 
 .todoList_wrapper {
   width: 58%;
-  margin-top: 62px;
+  margin-top: 3.875rem;
 
   :last-child {
     border-bottom: none;
   }
+  
+  @media (max-width: 550px) {
+    width: 100%;
+    margin-top: 6rem;
+  }
 }
 
 .task_completed_time {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }

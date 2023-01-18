@@ -1,6 +1,16 @@
 .pomodoro {
   margin-top: 6.25rem;
 }
+@media (max-width: 670px) {
+  .pomodoro {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 550px) {
+  .pomodoro {
+    margin-top: 3rem;
+  }
+}
 
 .content {
   display: flex;
@@ -16,6 +26,16 @@
 .buttons_wrapper :not(:last-child) {
   margin-bottom: 3.125rem;
 }
+@media (max-width: 670px) {
+  .buttons_wrapper {
+    margin: 9.525rem 3rem 0 0;
+  }
+}
+@media (max-width: 550px) {
+  .buttons_wrapper {
+    margin: 70px 0 50px 0;
+  }
+}
 
 .decor_wrapper {
   width: 30%;
@@ -27,16 +47,43 @@
 }
 
 .timer_wrapper {
-  margin-top: 100px;
-  margin-right: 90px;
+  margin-top: 6.25rem;
+  margin-right: 5.625rem;
+}
+@media (max-width: 670px) {
+  .timer_wrapper {
+    margin-right: 4.625rem;
+  }
+}
+@media (max-width: 550px) {
+  .timer_wrapper {
+    margin: 55px 0;
+  }
 }
 
 .pictures_pinned_to_bottom_to_screen {
-  width: 500px !important;
-  height: 430px !important;
+  width: auto !important;
+  height: 40vh !important;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+@media (max-width: 550px) {
+  .pictures_pinned_to_bottom_to_screen {
+    height: 30vh !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-height: 790px) {
+  .pictures_pinned_to_bottom_to_screen {
+    height: 20vh !important;
+  }
+}
+@media (max-height: 650px) {
+  .pictures_pinned_to_bottom_to_screen {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Pomodoro.module.css.map */

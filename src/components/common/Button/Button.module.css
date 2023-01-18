@@ -1,26 +1,30 @@
 .button {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #0a3125;
-  min-width: 364px;
+  min-width: 22.75rem;
   display: block;
   background-color: #caceac;
-  border-radius: 4px;
-  padding: 27px 20px;
+  border-radius: 0.166em;
+  padding: 1.125em 0.833em;
   transition: all 0.3s;
 }
-
 .button:hover {
   background-color: #81846e;
+}
+@media (max-width: 670px) {
+  .button {
+    min-width: 19.65rem;
+    padding: 0.925em 0.233em;
+  }
 }
 
 .transparent {
   composes: button;
   color: #caceac;
   background-color: transparent;
-  outline: 2px solid #caceac;
+  outline: 0.125rem solid #caceac;
 }
-
 .transparent:hover {
   color: #0a3125;
   background-color: #caceac;
@@ -29,10 +33,10 @@
 
 .small {
   composes: button;
+  font-size: 1.25rem;
   font-weight: 400;
-  min-width: 200px;
-  font-size: 20px;
-  padding: 10px 20px;
+  min-width: 12.5rem;
+  padding: 0.5em 1em;
 }
 
 /*# sourceMappingURL=Button.module.css.map */

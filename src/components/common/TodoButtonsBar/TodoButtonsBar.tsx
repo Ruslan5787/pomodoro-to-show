@@ -1,7 +1,7 @@
 import React, {FC, memo} from "react";
 import {NavLink} from "react-router-dom";
 
-import styles from "./ButtonsBar.module.scss";
+import styles from "./TodoButtonsBar.module.scss";
 
 import {moveTodoDown, moveTodoTop, removeTodo,} from "../../../store/reducers/TodosListsSlice";
 
@@ -11,7 +11,7 @@ import {useAppDispatch} from "../../../hooks/redux";
 
 import {ArrowDownIcon, ArrowTopIcon, DeleteIcon, OutIcon,} from "../../../images";
 
-import {ButtonBar} from "./ButtonBar";
+import {TodoButtonBar} from "./TodoButtonBar";
 
 interface ButtonsBarProps {
   todoId: string;
@@ -20,7 +20,7 @@ interface ButtonsBarProps {
   todoText: string;
 }
 
-export const ButtonsBar: FC<ButtonsBarProps> = memo((props) => {
+export const TodoButtonsBar: FC<ButtonsBarProps> = memo((props) => {
   const {todoId, todoText, todoSerialNumber, numberTasksInList} = props;
   const dispatch = useAppDispatch();
 
@@ -34,19 +34,19 @@ export const ButtonsBar: FC<ButtonsBarProps> = memo((props) => {
 
   return (
     <div className={styles.buttons_bar}>
-      <ButtonBar image={<DeleteIcon/>} handleClick={handleDeleteTodo}/>
-      <ButtonBar
+      <TodoButtonBar image={<DeleteIcon/>} handleClick={handleDeleteTodo}/>
+      <TodoButtonBar
         image={<ArrowTopIcon/>}
         hideButton={isTodoFirstInList}
         handleClick={() => dispatch(moveTodoTop(todoId))}
       />
-      <ButtonBar
+      <TodoButtonBar
         image={<ArrowDownIcon/>}
         hideButton={isTodoLastInList}
         handleClick={() => dispatch(moveTodoDown(todoId))}
       />
       <NavLink to="/">
-        <ButtonBar
+        <TodoButtonBar
           image={<OutIcon/>}
           handleClick={() =>
             dispatch(selectTodoToPerform({todoId, todoText}))
