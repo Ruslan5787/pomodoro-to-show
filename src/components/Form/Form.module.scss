@@ -18,11 +18,17 @@
   &::placeholder {
     font-style: italic;
     color: $mute;
+
+    @media (max-width: 550px) {
+      font-size: 1.325rem;
+    }
   }
 
   @media (max-width: 550px) {
+    font-size: 1.325rem;
     display: block;
     width: 80%;
+    padding: 1em 1.3em;
     margin: 0 auto 1.875rem;
   }
 }
@@ -32,6 +38,7 @@
 
   @media (max-width: 550px) {
     float: none;
+
     button {
       margin: 0 auto;
     }

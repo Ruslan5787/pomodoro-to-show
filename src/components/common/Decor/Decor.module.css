@@ -12,18 +12,18 @@
   max-width: 28.75rem;
   margin-bottom: 3.4375rem;
 }
+@media (max-width: 550px) {
+  .inscription {
+    margin-bottom: 4.2375rem;
+  }
+}
 
 .image {
   width: 15rem;
 }
-@media (max-width: 670px) {
+@media (max-width: 800px) {
   .image {
     width: 14rem;
-  }
-}
-@media (max-height: 760px) {
-  .image {
-    height: 19vh;
   }
 }
 .image svg {

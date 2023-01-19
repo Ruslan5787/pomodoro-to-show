@@ -9,9 +9,9 @@ import {ReactComponent as ArrowDownIcon} from "./icons/arrow-down.svg";
 import {ReactComponent as DeleteIcon} from "./icons/delete.svg";
 import {ReactComponent as SoundNotificationIcon} from "./icons/soundNotification.svg";
 
-import {ReactComponent as AnalyticsIcon} from "./navigation/analytics.svg";
+import {ReactComponent as AnalyticsIcon} from "./navigation/docs.svg";
 import {ReactComponent as TasksIcon} from "./navigation/tasks.svg";
-import {ReactComponent as PomodoroIcon} from "./navigation/pomodoro.svg";
+import {ReactComponent as PomodoroIcon} from "./navigation/clock.svg";
 
 import {ReactComponent as StartIcon} from "./timer/start.svg";
 import {ReactComponent as StopIcon} from "./timer/stop.svg";

@@ -16,9 +16,16 @@
   color: #407061;
 }
 @media (max-width: 550px) {
+  .input::placeholder {
+    font-size: 1.325rem;
+  }
+}
+@media (max-width: 550px) {
   .input {
+    font-size: 1.325rem;
     display: block;
     width: 80%;
+    padding: 1em 1.3em;
     margin: 0 auto 1.875rem;
   }
 }

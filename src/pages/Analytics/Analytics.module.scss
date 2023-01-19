@@ -5,6 +5,10 @@
     font-size: 1.25rem;
     flex: 0 1 55%;
 
+    @media (max-width: 550px) {
+      font-size: 1.55rem;
+    }
+
     li {
       white-space: nowrap;
     }
@@ -41,6 +45,10 @@
   border-bottom: 0.2em solid $secondary;
   padding-bottom: 0.4em;
   margin-bottom: 1.5em;
+  
+  @media (max-width: 550px) {
+    font-size: 1.75rem;
+  }
 }
 
 .todoList_wrapper {
@@ -53,7 +61,7 @@
   
   @media (max-width: 550px) {
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
 }
 

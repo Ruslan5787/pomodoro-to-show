@@ -53,9 +53,9 @@
     padding: 0.712rem 0.962rem 0;
   }
 }
-@media (max-width: 550px) {
+@media (max-height: 800px) {
   .navigateBar_icon {
-    padding: 0.212rem 0.862rem 0;
+    padding: 1.312rem 1.262rem 0;
   }
 }
 .navigateBar_icon svg {
@@ -66,12 +66,6 @@
   .navigateBar_icon svg {
     width: 3.012rem;
     height: 5.925rem;
-  }
-}
-@media (max-width: 550px) {
-  .navigateBar_icon svg {
-    width: 2.412rem;
-    height: 4.825rem;
   }
 }
 .navigateBar_icon:hover {

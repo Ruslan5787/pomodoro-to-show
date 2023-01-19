@@ -2,6 +2,11 @@
   font-size: 1.25rem;
   flex: 0 1 55%;
 }
+@media (max-width: 550px) {
+  .analytics_list {
+    font-size: 1.55rem;
+  }
+}
 .analytics_list li {
   white-space: nowrap;
 }
@@ -37,6 +42,11 @@
   padding-bottom: 0.4em;
   margin-bottom: 1.5em;
 }
+@media (max-width: 550px) {
+  .sub_title {
+    font-size: 1.75rem;
+  }
+}
 
 .todoList_wrapper {
   width: 58%;
@@ -48,7 +58,7 @@
 @media (max-width: 550px) {
   .todoList_wrapper {
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
 }
 
