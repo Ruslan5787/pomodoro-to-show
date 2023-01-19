@@ -1,6 +1,11 @@
 .form :not(:last-child) {
   margin-bottom: 1.875rem;
 }
+@media (max-width: 550px) {
+  .form :not(:last-child) {
+    margin-bottom: 2.575rem;
+  }
+}
 
 .input {
   font-size: 1.125rem;
@@ -24,7 +29,6 @@
   .input {
     font-size: 1.325rem;
     display: block;
-    width: 80%;
     padding: 1em 1.3em;
     margin: 0 auto 1.875rem;
   }
