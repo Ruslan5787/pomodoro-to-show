@@ -23,9 +23,7 @@ export const SoundNotification: FC = memo(() => {
 
   return (
     <div className={styles.sound_notification}>
-      <SoundNotificationIcon
-        className={styles.sound_notification_icon}
-      />
+      <SoundNotificationIcon className={styles.sound_notification_icon}/>
 
       <button className={styles.switch} onClick={handleClick}>
         {getSwitchState(isSoundNotificationEnabled)}

@@ -8,7 +8,10 @@ import styles from "../../pages/Pomodoro/Pomodoro.module.scss";
 
 import {useAppDispatch, useAppSelector} from "../../hooks/redux";
 import {getTodoToPerformInfo} from "../../store/selectors";
-import {addTimerSpentOnTodo, addTodoInAnalytics,} from "../../store/reducers/TodosListsSlice";
+import {
+  addTimerSpentOnTodo,
+  addTodoInAnalytics,
+} from "../../store/reducers/TodosListsSlice";
 
 import {Timer} from "../common/Timer/Timer";
 import {Decor} from "../common/Decor/Decor";
@@ -45,7 +48,7 @@ export const TimerTab: FC<TimerTabProps> = memo((props) => {
     <>
       <div className={styles.timer_wrapper}>
         <Timer
-          time={10}
+          time={1500}
           volumeNotification={0.15}
           changeState={changeState}
           soundNotification={rain_sounds}

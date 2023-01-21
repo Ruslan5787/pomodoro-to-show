@@ -1,5 +1,8 @@
 import React, {FC, memo, ReactNode} from "react";
-import {toggleCompleteTodo, updateAnalyticsData,} from "../../../store/reducers/TodosListsSlice";
+import {
+  toggleCompleteTodo,
+  updateAnalyticsData,
+} from "../../../store/reducers/TodosListsSlice";
 
 import styles from "./Todo.module.scss";
 

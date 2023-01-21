@@ -6,6 +6,6 @@ interface InformationAboutLackContentProps {
 }
 
 export const InformationAboutLackContent: FC<InformationAboutLackContentProps> =
-  memo((props) => {
+  memo(() => {
     return <p className={styles.taskList_information}>Здесь пока ничего нет</p>;
   });

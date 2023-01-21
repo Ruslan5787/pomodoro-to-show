@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   @media (max-width: 550px) {
     flex-direction: column;
   }
@@ -45,7 +45,7 @@
   border-bottom: 0.2em solid $secondary;
   padding-bottom: 0.4em;
   margin-bottom: 1.5em;
-  
+
   @media (max-width: 550px) {
     font-size: 1.75rem;
   }
@@ -58,7 +58,7 @@
   :last-child {
     border-bottom: none;
   }
-  
+
   @media (max-width: 550px) {
     width: 100%;
     margin-top: 7rem;

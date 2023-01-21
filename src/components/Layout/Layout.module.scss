@@ -53,18 +53,18 @@
     padding: 1.312rem 1.062rem 0;
     transition: all 0.3s;
 
-    @media(max-width: 670px) {
+    @media (max-width: 670px) {
       padding: 0.712rem 0.962rem 0;
     }
 
-    @media(max-height: 800px) {
+    @media (max-height: 800px) {
       padding: 1.312rem 1.262rem 0;
     }
     svg {
       width: 3.312rem;
       height: 5.625rem;
 
-      @media(max-width: 670px) {
+      @media (max-width: 670px) {
         width: 3.012rem;
         height: 5.925rem;
       }

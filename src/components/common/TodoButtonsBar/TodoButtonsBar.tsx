@@ -3,13 +3,25 @@ import {NavLink} from "react-router-dom";
 
 import styles from "./TodoButtonsBar.module.scss";
 
-import {moveTodoDown, moveTodoTop, removeTodo,} from "../../../store/reducers/TodosListsSlice";
+import {
+  moveTodoDown,
+  moveTodoTop,
+  removeTodo,
+} from "../../../store/reducers/TodosListsSlice";
 
-import {clearTodoToPerform, selectTodoToPerform,} from "../../../store/reducers/SelectedTodoToPerformSlice";
+import {
+  clearTodoToPerform,
+  selectTodoToPerform,
+} from "../../../store/reducers/SelectedTodoToPerformSlice";
 
 import {useAppDispatch} from "../../../hooks/redux";
 
-import {ArrowDownIcon, ArrowTopIcon, DeleteIcon, OutIcon,} from "../../../images";
+import {
+  ArrowDownIcon,
+  ArrowTopIcon,
+  DeleteIcon,
+  OutIcon,
+} from "../../../images";
 
 import {TodoButtonBar} from "./TodoButtonBar";
 

@@ -40,6 +40,7 @@ export const Timer: FC<TimerProps> = memo((props) => {
     () => getTimeWithExtraZero(Math.floor(timeLeft / 60)),
     [timeLeft]
   );
+
   const seconds = useMemo(
     () => getTimeWithExtraZero(timeLeft - Number(minutes) * 60),
     [timeLeft]

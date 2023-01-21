@@ -4,7 +4,6 @@ import {useAppSelector} from "../../hooks/redux";
 import styles from "./Analytics.module.scss";
 import stylesTitle from "../../components/common/Title/Title.module.scss";
 
-
 import {Title} from "../../components/common/Title/Title";
 import {Todo} from "../../components/common/Todo/Todo";
 import {getHoursAndMinutesFromMinutes} from "../../helpers/getHoursAndMinutesFromMinutes";
@@ -57,11 +56,7 @@ export const Analytics: FC = memo(() => {
         </div>
 
         <div className={styles.todoList_wrapper}>
-          {list.length ? (
-            analyticsList
-          ) : (
-            <InformationAboutLackContent />
-          )}
+          {list.length ? analyticsList : <InformationAboutLackContent/>}
         </div>
       </div>
     </div>
