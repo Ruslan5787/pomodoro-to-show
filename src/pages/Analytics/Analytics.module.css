@@ -2,7 +2,7 @@
   font-size: 1.25rem;
   flex: 0 1 55%;
 }
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .analytics_list {
     font-size: 1.55rem;
   }
@@ -58,7 +58,7 @@
 @media (max-width: 550px) {
   .todoList_wrapper {
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
 }
 

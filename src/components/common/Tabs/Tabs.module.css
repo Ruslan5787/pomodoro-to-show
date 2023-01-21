@@ -32,7 +32,7 @@
   color: #caceac;
   text-shadow: 0 0 1px #caceac, 0 0 1px #caceac;
 }
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .tab {
     font-size: 1.55rem;
     padding-bottom: 0.7em;
